@@ -1,11 +1,14 @@
 #!/usr/bin/python3
-"""print the list of dictionary"""
+"""Module 0-lookup.
+Finding a list of available attributes and methods of an object.
+"""
 
 
 def lookup(obj):
-    """
-    return the dictionery of the class
-    and the given integer
+    """Returns that list of attributes and methods.
+
+    Args:
+        - obj: object to look into
     """
 
     return dir(obj)

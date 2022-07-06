@@ -1,13 +1,18 @@
 #!/usr/bin/python3
-"""Write a Function that return True if ..."""
+"""Module 4-inherits_from.
+Finds if the object is an instance of a class that inherited
+(directly or indirectly) from the specified class."""
 
 
 def inherits_from(obj, a_class):
-    """
-    args:
-        obj@listof an elemrnr
+    """Determines if obj is an instance of a class that
+    inherited from a_class.
+
+    Args:
+        - obj: object to look at
+        - a_class: class to evaluate
+
+    Returns: True or False
     """
 
-    if issubclass(type(obj), a_class) and type(obj) != a_class:
-        return True
-    return False
+    return isinstance(obj, a_class) and type(obj) != a_class
