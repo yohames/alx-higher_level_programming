@@ -10,7 +10,7 @@ function addToDict (url, name) {
   dict[url] = name;
 }
 
-request('http://swapi.co/api/films/' + process.argv[2], function (error, response, body) {
+request('http://swapi-api.hbtn.io/api/films/' + process.argv[2], function (error, response, body) {
   if (error) {
     console.error(error);
   }
